@@ -14,9 +14,6 @@ pipeline:
        - Y_IMAGE=core-image-base
        - GITHUB_USER=tlwt
        - GITHUB_REPO=imx-x11-imx6ulevk
-#       - disable_sync=1
-       - disable_setup=1
-       - disable_bake=1
   slack: # pushing out notification
     image: plugins/slack:latest
     channel: build-automation
