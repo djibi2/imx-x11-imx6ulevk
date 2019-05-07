@@ -1,0 +1,26 @@
+pipeline:
+  submod:
+     image: docker:git
+     commands:
+       - git submodule update --recursive --remote
+  build:
+    image: tlwt/yoctodocker:latest
+    secrets: [ GITHUB_TOKEN ]
+    environment:
+       - GIT_EMAIL=mail@tillwitt.de
+       - GIT_NAME=Till Witt
+       - Y_MACHINE=imx6ulevk
+       - Y_DISTRO=fsl-imx-x11
+       - Y_IMAGE=core-image-base
+       - R_GITHUBUSER=tlwt
+       - R_GITHUBREPO=imx-x11-imx6ulevk
+#       - disable_sync=1
+       - disable_setup=1
+       - disable_bake=1
+  slack: # pushing out notification
+    image: plugins/slack:latest
+    channel: build-automation
+    webhook: https://hooks.slack.com/services/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
+    when:
+      status: [ success, failure ]
+branches: master
