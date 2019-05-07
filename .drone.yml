@@ -18,10 +18,6 @@ pipeline:
        - Y_IMAGE=core-image-base
        - GITHUB_USER=tlwt
        - GITHUB_REPO=imx-x11-imx6ulevk
-    commands:
-      - pwd
-      - ls -la
-      - ls /drone/custombuild
   slack: # pushing out notification
     image: plugins/slack:latest
     channel: build-automation
