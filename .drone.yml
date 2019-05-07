@@ -1,6 +1,6 @@
 workspace:
-  - base: /drone
-  - path: /custombuild
+  base: /drone
+  path: /custombuild
 
 pipeline:
   submod:
