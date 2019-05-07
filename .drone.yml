@@ -1,3 +1,7 @@
+workspace:
+  - base: /drone
+  - path: /custombuild
+
 pipeline:
   submod:
      image: docker:git
@@ -14,10 +18,10 @@ pipeline:
        - Y_IMAGE=core-image-base
        - GITHUB_USER=tlwt
        - GITHUB_REPO=imx-x11-imx6ulevk
-    volumes:
-      - ./config/bblayers.conf.org:/data/build/conf/bblayers.conf.org
-      - ./config/local.conf.org:/data/build/conf/local.conf.org
-      - ./sources:/data/sources
+    commands:
+      - pwd
+      - ls -la
+      - ls /drone/custombuild
   slack: # pushing out notification
     image: plugins/slack:latest
     channel: build-automation
