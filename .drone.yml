@@ -12,8 +12,8 @@ pipeline:
        - Y_MACHINE=imx6ulevk
        - Y_DISTRO=fsl-imx-x11
        - Y_IMAGE=core-image-base
-       - R_GITHUBUSER=tlwt
-       - R_GITHUBREPO=imx-x11-imx6ulevk
+       - GITHUB_USER=tlwt
+       - GITHUB_REPO=imx-x11-imx6ulevk
 #       - disable_sync=1
        - disable_setup=1
        - disable_bake=1
