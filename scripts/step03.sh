@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
 echo = sub source content
-echo = git???
+echo = git??? -x
 git -C /drone/custombuild/ submodule update --recursive --remote
 
 
