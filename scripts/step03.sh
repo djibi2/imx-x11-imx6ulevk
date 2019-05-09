@@ -14,3 +14,8 @@ ls -la /drone/custombuild/sources/
 echo =
 echo = target sources content
 ls -la /data/sources/
+
+
+echo = sub target sources content
+ls -la /data/sources/meta-java
+ls -la /data/sources/meta-kernel-addons
