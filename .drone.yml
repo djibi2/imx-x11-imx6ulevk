@@ -10,7 +10,7 @@ pipeline:
        - ls -la
        - cd /drone/custombuild/sources/meta-java
        - pwd
-       - git submodule update --init --recursive
+       - git submodule update -b rocko --init --recursive
        - ls -la
   build:
     image: tlwt/yoctodocker:latest
