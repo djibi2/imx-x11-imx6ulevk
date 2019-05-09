@@ -4,7 +4,7 @@ workspace:
 
 pipeline:
   submod:
-     image: docker:git
+     image: plugins/git
      commands:
        - pwd
        - ls -la
