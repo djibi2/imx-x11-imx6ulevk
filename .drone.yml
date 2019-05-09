@@ -8,9 +8,10 @@ pipeline:
      commands:
        - pwd
        - ls -la
+       - cd /drone/custombuild/sources/meta-java
+       - pwd
        - git submodule update --recursive
        - git submodule update --recursive --remote
-       - ls -la /drone/custombuild/sources/meta-java
   build:
     image: tlwt/yoctodocker:latest
     secrets: [ GITHUB_TOKEN ]
