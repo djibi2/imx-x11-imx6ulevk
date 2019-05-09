@@ -16,6 +16,10 @@ echo = target sources content
 ls -la /data/sources/
 
 
+echo = sub source content
+ls -la /data/custombuild/meta-java
+ls -la /data/custombuild/meta-kernel-addons
+
 echo = sub target sources content
 ls -la /data/sources/meta-java
 ls -la /data/sources/meta-kernel-addons
