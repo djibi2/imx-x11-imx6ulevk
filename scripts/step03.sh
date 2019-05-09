@@ -17,8 +17,8 @@ ls -la /data/sources/
 
 
 echo = sub source content
-ls -la /data/custombuild/meta-java
-ls -la /data/custombuild/meta-kernel-addons
+ls -la /drone/custombuild/sources/meta-java
+ls -la /drone/custombuild/sources/meta-kernel-addons
 
 echo = sub target sources content
 ls -la /data/sources/meta-java
