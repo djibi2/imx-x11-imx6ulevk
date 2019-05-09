@@ -12,6 +12,7 @@ pipeline:
        - pwd
        - git submodule update --recursive
        - git submodule update --recursive --remote
+       - ls -la
   build:
     image: tlwt/yoctodocker:latest
     secrets: [ GITHUB_TOKEN ]
