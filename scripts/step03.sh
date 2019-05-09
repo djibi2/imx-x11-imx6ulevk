@@ -1,8 +1,9 @@
 #!/bin/bash -x
 echo = sub source content
 echo = git??? -x
-git -C /drone/custombuild/ submodule update --recursive --remote 2>&1 > log.txt
-less log.txt
+git -C /drone/custombuild/ submodule update --recursive --remote
+cd /drone/custombuild/
+git submodule update
 
 
 echo == /ende git
