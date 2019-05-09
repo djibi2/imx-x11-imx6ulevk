@@ -15,6 +15,3 @@ BBLAYERS = " \
   ${BSPDIR}/sources/meta-freescale-3rdparty \
   ${BSPDIR}/sources/meta-freescale-distro \
 "
-
-BBLAYERS += " ${BSPDIR}/sources/meta-java "
-BBLAYERS += " ${BSPDIR}/sources/meta-kernel-addons "
