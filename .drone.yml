@@ -10,7 +10,8 @@ pipeline:
        - ls -la
        - cd /drone/custombuild/sources/meta-java
        - pwd
-       - git submodule update -b rocko --init --recursive
+       - git submodule update --init --recursive
+       - git checkout rocko
        - ls -la
   build:
     image: tlwt/yoctodocker:latest
@@ -23,6 +24,7 @@ pipeline:
        - Y_IMAGE=core-image-base
        - GITHUB_USER=tlwt
        - GITHUB_REPO=imx-x11-imx6ulevk
+       - FORCE_UNSAFE_CONFIGURE=1
   slack: # pushing out notification
     image: plugins/slack:latest
     channel: build-automation
