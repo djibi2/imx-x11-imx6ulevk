@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+   compiler:
+     image: tlwt/yoctodocker
+     stdin_open: true
+     tty: true
+     environment:
+       - GIT_EMAIL=mail@tillwitt.de
+       - GIT_NAME=Till Witt
+       - Y_MACHINE=imx6ulevk
+       - Y_DISTRO=fsl-imx-x11
+       - Y_IMAGE=core-image-base
+       - GITHUB_USER=tlwt
+       - GITHUB_REPO=imx-x11-imx6ulevk
+       - GITHUB_TOKEN
+     volumes:
+        - ./:/drone/custombuild
