@@ -5,3 +5,6 @@
 Build will be automatically triggered unless `[CI SKIP]` is written in the commit message
 
 Base documentation can be found at: https://github.com/tlwt/yoctoDocker
+
+Buying an i.MX 6 UL EVK
+* https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx6ultralite-evaluation-kit:MCIMX6UL-EVK
