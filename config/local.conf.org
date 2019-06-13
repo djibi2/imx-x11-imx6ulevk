@@ -51,6 +51,15 @@ TOOLCHAIN_HOST_TASK_append += "nativesdk-cmake"
 
 # qtdeclarative-plugins
 IMAGE_INSTALL_append = " \
+    perl \
+    perl-module-base \
+    perl-module-bytes \
+    perl-module-data-dumper \
+    perl-module-digest-md5 \
+    perl-module-file-spec \
+    perl-module-file-spec-functions \
+    perl-module-findbin \
+    perl-module-getopt-long \
     qtbase-plugins \
     qtbase-tools \
     qtbase-examples \

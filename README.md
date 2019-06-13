@@ -4,6 +4,4 @@
 
 Build will be automatically triggered unless `[CI SKIP]` is written in the commit message
 
-Base documentation can be found at:
-
-https://github.com/tlwt/yoctoDocker
+Base documentation can be found at: https://github.com/tlwt/yoctoDocker
