@@ -16,3 +16,4 @@ services:
        - GITHUB_TOKEN
      volumes:
         - ./:/drone/custombuild
+        - ./buildTmp:/data

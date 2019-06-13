@@ -1,0 +1,2 @@
+buildTmp/*
+!buildTmp/README.md
