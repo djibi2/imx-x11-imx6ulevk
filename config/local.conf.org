@@ -49,8 +49,7 @@ PACKAGECONFIG_FONTS_append_pn-qtbase = " fontconfig"
 
 TOOLCHAIN_HOST_TASK_append += "nativesdk-cmake"
 
-# qtdeclarative-plugins
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL += "\
     perl \
     perl-module-base \
     perl-module-bytes \
@@ -59,7 +58,10 @@ IMAGE_INSTALL_append = " \
     perl-module-file-spec \
     perl-module-file-spec-functions \
     perl-module-findbin \
-    perl-module-getopt-long \
+    perl-module-getopt-long"
+
+# qtdeclarative-plugins
+IMAGE_INSTALL_append = " \
     qtbase-plugins \
     qtbase-tools \
     qtbase-examples \
